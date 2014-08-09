@@ -8,14 +8,39 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <style type="text/css">
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Palatino Linotype", Palatino, Georgia, serif;
+        color: #178b51;
+        font-weight: bold;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+    h3 {
+        margin-top: 10px;
+    }
+    .example-orbit img {
+        max-height: 477px;
+        text-align: center;
+    }
     .suite {
         height: 420px;
         margin-bottom: 15px;
+        clear: both;
     }
-    h3 {
-        margin-top: 25px;
+    .top-bar {
+        background-color: #007840;
     }
-
+    .top-bar .name h1 {
+        font-size: 1.7rem;
+    }
+    .top-bar-section li:not(.has-form) a:not(.button) {
+        background-color: #007840;
+    }
     </style>
 </head>
 
@@ -50,10 +75,10 @@
             </ul>
 
             <!-- Left Nav Section -->
-            <ul class="left">
+     <!--        <ul class="left">
                 <li><a href="#directions">Directions</a>
                 </li>
-            </ul>
+            </ul> -->
         </section>
     </nav>
 
@@ -88,20 +113,9 @@
 
     <div class="row suite" id="heritage-suite">
         <a id="heritage-suite"></a>
-        <div class="small-12 large-6 columns">
-            <h3>Heritage Suite</h3>
-            <p>Heritage Suite is the original house built in the early 1900's and now updated and completely renovated to provide top quality and comfort. It features four bedrooms, three full bathrooms and accommodates up to eight people.
-            </p>
-            <p>The main floor has a spacious living room, dining room, and fully equipped kitchen. And there's more: TV, DVD, private washer/dryer, central air, off-street parking and outdoor decks.</p>
-        </div>
-        <div class="small-12 large-6 columns">
+        <div class="small-12 large-8 columns">
             <ul class="example-orbit" data-orbit>
-                <li>
-                    <img src="https://lh6.googleusercontent.com/-t5z0PcM3DW0/TqWst0Oh1DI/AAAAAAAABs4/AFMKxp7aftA/s800/3_IMG_0113.jpg" alt="slide 1" />
-                    <div class="orbit-caption">
-                        Caption One.
-                    </div>
-                </li>
+
                 <li>
                     <img src="https://lh6.googleusercontent.com/-DVHTqxlie-Q/TqWsv1btNdI/AAAAAAAABtA/W4y3WYrJ_Ro/s800/3_IMG_0122.jpg" alt="slide 2" />
                     <div class="orbit-caption">
@@ -116,35 +130,58 @@
                 </li>
             </ul>
         </div>
+        <div class="small-12 large-4 columns">
+            <h3>Heritage Suite</h3>
+            <p>Heritage Suite is the original house built in the early 1900's and now updated and completely renovated to provide top quality and comfort. It features four bedrooms, three full bathrooms and accommodates up to eight people.
+            </p>
+            <p>The main floor has a spacious living room, dining room, and fully equipped kitchen. And there's more: TV, DVD, private washer/dryer, central air, off-street parking and outdoor decks.</p>
+            <div class="row">
+                <div class="small-12 columns"> <a href="http://www.vrbo.com/610049" target="_blank" class="button large expand">Check Availability</a>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
 
     <div class="row suite" id="garden-suite">
         <a id="garden-suite"></a>
-        <div class="small-12 large-6 columns ">
+        <div class="small-12 large-4 columns ">
             <h3>Garden Suite</h3>
             <p>Garden Suite offers quiet, style and comfort. It has two bedrooms, each with its own full bathroom, and accommodates up to five people.
             </p>
             <p>Garden Suite has a living/dining room, fully equipped kitchen, TV, DVD, private washer/dryer, central air, off-stret parking and an outdoor deck.</p>
+            <div class="row">
+                <div class="small-12 columns"> <a href="http://www.vrbo.com/610049" target="_blank" class="button large expand">Check Availability</a>
+                </div>
+
+            </div>
         </div>
-        <div class="small-12 large-6 columns">
+        <div class="small-12 large-8 columns">
             <ul class="example-orbit" data-orbit>
                 <li>
-                    <img src="https://lh4.googleusercontent.com/-JA2jU1_TtqM/TqWoI-eXARI/AAAAAAAABrc/sneU8kvW54A/s800/3_IMG_1866.jpg" alt="slide 1" />
+                    <img src="http://imagesus.homeaway.com/mda01/7fe745cd-6ceb-467a-acb1-e60f4d994db6.1.10" alt="slide 1" />
                     <div class="orbit-caption">
-                        Caption One.
+                        Second Street Cottages
                     </div>
                 </li>
                 <li>
-                    <img src="https://lh5.googleusercontent.com/-Lrbc4yed6kM/TqWoU__IN4I/AAAAAAAABr0/ASeaihaGiJI/s800/3_IMG_1950.jpg" alt="slide 2" />
+                    <img src="http://imagesus.homeaway.com/mda01/14087aac-e6ad-49fa-b28c-77aebd826815.1.10" alt="slide 1" />
                     <div class="orbit-caption">
-                        Caption Two.
+                        Garden Suite, private entry
                     </div>
                 </li>
                 <li>
-                    <img src="https://lh6.googleusercontent.com/-IrbyeHRm1m0/TqWoijK-6NI/AAAAAAAABsE/mLsqof_UgzI/s800/3_IMG_1951.jpg" alt="slide 3" />
+                    <img src="http://imagesus.homeaway.com/mda01/6840589a-e6b1-473b-b213-34e80315907e.1.10" alt="slide 2" />
                     <div class="orbit-caption">
-                        Caption Three.
+                        Garden Suite, private entry
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/57dd1d16-2cf3-4bfe-8352-859571360a3a.1.10" alt="slide 3" />
+                    <div class="orbit-caption">
+                        Living room, great for quiet reading
                     </div>
                 </li>
             </ul>
@@ -154,15 +191,19 @@
     </div>
 
     <div class="row">
-        <a id="directions"></a>
+        <a id="calendars"></a>
         <div class="small-12 medium-12 large-12 columns">
-            <h3>Directions</h3>
-            <iframe width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=144+north+second+street+ashland,+or&amp;sll=37.0625,-95.677068&amp;sspn=54.621153,135.351563&amp;ie=UTF8&amp;ll=42.203027,-122.708273&amp;spn=0.022253,0.05064&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-            <br />
-            <small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=144+north+second+street+ashland,+or&amp;sll=37.0625,-95.677068&amp;sspn=54.621153,135.351563&amp;ie=UTF8&amp;ll=42.203027,-122.708273&amp;spn=0.022253,0.05064&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a>
-            </small>
-            <p>
+            <h3>Calendars</h3>
 
+            <div class="row">
+                <div class="small-12 medium-6 columns">
+                <panel>
+                    <h3>Heritage Suite</h3></panel>
+                </div>
+                <div class="small-12 medium-6 columns">
+                    <h3>Garden Suite</h3>
+                </div>
+            </div>
 
         </div>
     </div>
