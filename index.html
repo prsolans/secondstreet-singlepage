@@ -6,22 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Second Street Cottages - Ashland, OR</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
     <style type="text/css">
+    body,
+    .panel {
+        background-color: #F2EEDE;
+    }
     h1,
     h2,
     h3,
     h4,
     h5 {
-        font-family: "Palatino Linotype", Palatino, Georgia, serif;
+        font-family: "Alegreya", serif;
         color: #178b51;
         font-weight: bold;
     }
     h1 {
+        font-size: 3.2rem;
         margin-top: 20px;
+    }
+    h2 {
+        border-top: 4px solid #59453E;
     }
     h3 {
         margin-top: 10px;
+    }
+    .button {
+        background-color: #0B4025;
+    }
+    .footer {
+        background-color: #007840;
+        border-top: 4px solid #59453E;
+        color: #F2EEDE;
+        padding: 9px;
+    }
+    .full-width {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: initial;
+    }
+    .panel {
+        border: none;
+        /*border-left: 9px solid #59453E;*/
     }
     .example-orbit img {
         max-height: 477px;
@@ -34,6 +62,12 @@
     }
     .top-bar {
         background-color: #007840;
+        height: 100px;
+        padding: 9px;
+        padding-top: 25px;
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
+        box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
     }
     .top-bar .name h1 {
         font-size: 1.7rem;
@@ -58,8 +92,6 @@
         <section class="top-bar-section">
             <!-- Right Nav Section -->
             <ul class="right">
-                <li class="active"><a href="http://www.vrbo.com/610049" target="_blank">Reserve Now</a>
-                </li>
                 <li class="has-dropdown">
                     <a href="#">Our Suites</a>
                     <ul class="dropdown">
@@ -67,24 +99,24 @@
                         </li>
                         <li><a href="#garden-suite">Garden Suite</a>
                         </li>
-
                     </ul>
                 </li>
-                <li><a href="#contact">Contact</a>
-
-            </ul>
-
-            <!-- Left Nav Section -->
-     <!--        <ul class="left">
-                <li><a href="#directions">Directions</a>
+                <li><a href="#calendars">Calendars</a>
                 </li>
-            </ul> -->
+                <li><a href="#policies">Rental Policies</a>
+                </li>
+                <li><a href="#contact">Contact Us</a>
+                </li>
+            </ul>
         </section>
     </nav>
+
+
 
     <div class="row">
         <div class="large-12 columns">
             <h1>Welcome to Second Street Cottages</h1>
+
         </div>
     </div>
 
@@ -92,16 +124,19 @@
     <div class="row">
         <div class="large-12 columns">
             <div class="panel">
-                <h3>Ashland's Most Charming Address</h3>
-                <p>2nd Street Cottages, Act 2 is located just two blocks from the center of Ashland, including the Shakespeare Festival Theaters, shops and restaurants. Our three spacious suites have all the amenities: living room, dining room, full kitchen (fully-equipped), multiple bedrooms and bathrooms, decks and patio areas.
 
-                </p>
-                <p>Begin planning your trip by clicking the links below:</p>
+                <p>Second Street Cottages, Act 2 is an historic home with two private Suites: Heritage Suite and Garden Suite. It is located just two blocks from the center of Ashland, including the Shakespeare Festival Theaters, unique shops, and restaurants. Both suites feature a living room, dining area, fully-equipped kitchen, multiple bedrooms and bathrooms, decks and patio areas.</p>
+                <p>The
+                    <strong>Heritage Suite</strong>can accommodate up to eight (8) guests, and contains four bedrooms and three full bathrooms.</p>
+                <p>The
+                    <strong>Garden Suite</strong>can accommodate up to five (5) guests, and contains two bedrooms and two full bathrooms.</p>
+                <P>Although the Heritage and Garden suites are separate, they can be booked concurrently (depending on availability) for guests who prefer or need more space.</p>
+                <p>To begin planning your trip, please click the buttons below for details about the accommodations, amenities, and rates:</p>
                 <div class="row">
                     <div class="small-12 medium-4 columns">
-                        <a href="http://www.vrbo.com/610049" target="_blank" class="button large expand">Check Availability</a>
+                        <a href="#heritage-suite" class="button large expand">Heritage Suite</a>
                     </div>
-                    <div class="small-12 medium-4 columns"><a href="http://www.vrbo.com/610049" target="_blank" class="button large expand">Make a Reservation</a>
+                    <div class="small-12 medium-4 columns"><a href="#garden-suite" class="button large expand">Garden Suite</a>
                     </div>
                     <div class="small-12 medium-4 columns"><a href="#contact" class="button large expand">Contact Us</a>
                     </div>
@@ -111,9 +146,16 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="large-12 columns">
+            <a id="heritage-suite"></a>
+            <h2>Heritage Suite</h2>
+
+        </div>
+    </div>
+
     <div class="row suite" id="heritage-suite">
-        <a id="heritage-suite"></a>
-        <div class="small-12 large-8 columns">
+        <div class="small-12 large-6 columns">
             <ul class="example-orbit" data-orbit>
 
                 <li>
@@ -130,35 +172,49 @@
                 </li>
             </ul>
         </div>
-        <div class="small-12 large-4 columns">
-            <h3>Heritage Suite</h3>
-            <p>Heritage Suite is the original house built in the early 1900's and now updated and completely renovated to provide top quality and comfort. It features four bedrooms, three full bathrooms and accommodates up to eight people.
-            </p>
-            <p>The main floor has a spacious living room, dining room, and fully equipped kitchen. And there's more: TV, DVD, private washer/dryer, central air, off-street parking and outdoor decks.</p>
-            <div class="row">
-                <div class="small-12 columns"> <a href="http://www.vrbo.com/610049" target="_blank" class="button large expand">Check Availability</a>
-                </div>
+        <div class="small-12 large-6 columns">
+            <p>The Heritage Suite is at the front of the original Second Street Cottage house built in the early 1900's. It has been updated and completely renovated with top quality furnishings, clean space, and a fresh living environment. It features four bedrooms, three full bathrooms and accommodates up to eight guests. Three bedrooms have twin beds, and one contains a queen bed.</p>
 
-            </div>
+            <p>The main floor has a spacious living room, dining room, and a fully-equipped kitchen. Likewise the Suite features a TV (with DVD player), a private washer/dryer, central air, off-street parking, and outdoor decks.</p>
+            <p>Our rates are listed below. We require a minimum stay of two nights.</p>
         </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-6 columns">
 
+            <h3>Seasonal Rates <small>May 1 through October 31</small></h3>
+                <ul>
+                    <li>$420/night for up to four guests
+                        <ul>
+                            <li>Each additional guest, $30/night per person</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+
+            <a href="http://www.vrbo.com/402580" target="_blank" class="button large expand">Check Availability</a>
+        </div>
+        <div class="small-12 large-6 columns">
+            <p>Our Heritage Suite is listed on VRBO (vrbo.com); property/listing #402580. Click the button below to check for full availability, make inquiries, book reservations, and make secure online payments.</p>
+            <p>Our VRBO Heritage Suite listing contains more detailed information, photographs, full calendar, an Ashland area map, and online payment options.</p>
+        </div>
     </div>
 
+    <div class="row">
+        <div class="large-12 columns">
+            <a id="garden-suite"></a>
+            <h2>Garden Suite</h2>
+
+        </div>
+    </div>
 
     <div class="row suite" id="garden-suite">
-        <a id="garden-suite"></a>
-        <div class="small-12 large-4 columns ">
-            <h3>Garden Suite</h3>
-            <p>Garden Suite offers quiet, style and comfort. It has two bedrooms, each with its own full bathroom, and accommodates up to five people.
+        <div class="small-12 large-6 columns ">
+            <p>The Garden Suite is located in the back portion of the original Second Street Cottage house built in the early 1900's. It has been updated and completely renovated with top quality furnishings, clean space, and a fresh living environment. The Garden Suite offers a quiet experience, stylish appointments, and living comfort. It has two bedrooms, each with it's own full bathroom, and accomodates up to five guests.
             </p>
-            <p>Garden Suite has a living/dining room, fully equipped kitchen, TV, DVD, private washer/dryer, central air, off-stret parking and an outdoor deck.</p>
-            <div class="row">
-                <div class="small-12 columns"> <a href="http://www.vrbo.com/610049" target="_blank" class="button large expand">Check Availability</a>
-                </div>
-
-            </div>
+            <p>In addition, the Garden Suite has a living room, a fully equipped kitchen, TV (with DVD player), a private washer/dryer, central air, off-street parking, and an outdoor patio.</p>
         </div>
-        <div class="small-12 large-8 columns">
+        <div class="small-12 large-6 columns">
             <ul class="example-orbit" data-orbit>
                 <li>
                     <img src="http://imagesus.homeaway.com/mda01/7fe745cd-6ceb-467a-acb1-e60f4d994db6.1.10" alt="slide 1" />
@@ -186,22 +242,65 @@
                 </li>
             </ul>
         </div>
-
+    </div>
+    <div class="row">
+        <div class="small-12 large-6 columns"> <p>Our rates are listed below. We require a minimum stay of two nights.</p>
+            <h3>Seasonal Rates <small>May 1 through October 31</small></h3>
+                <ul><li>$290/night for up to four guests<ul><li>Each additional guest, $30/night per person</li></ul></li></ul><a href="http://www.vrbo.com/610049" target="_blank" class="button large expand">Check Availability</a>
+        </div>
+        <div class="small-12 large-6 columns"> <p>Our Garden Suite is listed on VRBO (vrbo.com); property/listing #610049.</p><p>Click the button below to check for full availability, make inquiries, book reservations, and make secure online payments.</p>
+            <p>Our VRBO Garden Suite listing contains more detailed information, photographs, full calendar, an Ashland area map, and online payment options.</p>
+        </div>
 
     </div>
 
     <div class="row">
-        <a id="calendars"></a>
+        <div class="large-12 columns">
+            <a id="calendars"></a>
+            <h2>Calendars</h2>
+<p>Calendars at a glance for each suite are illustrated below. Please note that a full calendar for each suite is available on the relevant VRBO listing. To be directed there, please click the appropriate link beneath the calendars.</p>
+        </div>
+    </div>
+    <div class="row">
         <div class="small-12 medium-12 large-12 columns">
-            <h3>Calendars</h3>
 
             <div class="row">
                 <div class="small-12 medium-6 columns">
-                <panel>
-                    <h3>Heritage Suite</h3></panel>
+                    <panel>
+                        <h3>Heritage Suite</h3>
+ <div id="_vrbo_cal_widget_402580">
+                        <div id="_vrbo_cal_link_402580">
+                            <a href="http://www.vrbo.com/402580" target="_blank" rel="nofollow">View all dates</a>
+                        </div>
+                        <script type="text/javascript">
+                        var _vrbo_widget = "true";
+                        var _vrbo_base_url = "http://www.vrbo.com";
+                        var _vrbo_listing_id = 402580;
+                        var _vrbo_months = 3;
+                        var _vrbo_orientation = "horizontal";
+                        var _vrbo_bg_color = "#E5DAAD";
+                        </script>
+                        <script type="text/javascript" src="http://www.vrbo.com/resources/current/scripts/calendarwidget.js"></script>
+                    </div>
+                    </panel>
                 </div>
                 <div class="small-12 medium-6 columns">
                     <h3>Garden Suite</h3>
+
+                    <div id="_vrbo_cal_widget_610049">
+                        <div id="_vrbo_cal_link_610049">
+                            <a href="http://www.vrbo.com/610049" target="_blank" rel="nofollow">View all dates</a>
+                        </div>
+                        <script type="text/javascript">
+                        var _vrbo_widget = "true";
+                        var _vrbo_base_url = "http://www.vrbo.com";
+                        var _vrbo_listing_id = 610049;
+                        var _vrbo_months = 3;
+                        var _vrbo_orientation = "horizontal";
+                        var _vrbo_bg_color = "#E5DAAD";
+                        </script>
+                        <script type="text/javascript" src="http://www.vrbo.com/resources/current/scripts/calendarwidget.js"></script>
+                    </div>
                 </div>
             </div>
 
@@ -209,16 +308,70 @@
     </div>
 
     <div class="row">
-        <a id="contact"></a>
+        <div class="large-12 columns">
+            <a id="policies"></a>
+            <h2>Rental Policies</h2>
+
+        </div>
+    </div>
+
+    <div class="row">
         <div class="small-12 medium-12 large-12 columns">
-            <h3>Contact Us</h3>
+
+            <p>The following policies apply equally to both of our suites:</p>
+            <ul>
+                <li>A minimum stay at Second Street Cottages is 2 nights</li>
+                <li>Deposits and Payments:
+                    <ul>
+                        <li>One night's deposit is required to hold a reservation, payable within 7 days of booking. Confirmation will be sent by email upon receipt of deposit.</li>
+                        <li>The final balance (less the deposit) is due 30 days prior to arrival. Confirmation will be sent by email upon receipt of the final balance.</li>
+                    </ul>
+                </li>
+                <li>Check-In:
+                    <ul>
+                        <li>Guests may check-in at 3:00 pm or later. Please contact us if you require an earlier check-in due a theater performance. Usually times can be arranged in advance.</li>
+                    </ul>
+                </li>
+                <li>Check-Out:
+                    <ul>
+                        <li>We require guests to check-out by 11:00 am.</li>
+                    </ul>
+                </li>
+                <li>Cancellations:
+                    <ul>
+                        <li>A full refund, less a $50 cancellation fee, will be provided for guests who cancel 45 calendar days prior to arrival.</li>
+                        <li>If canceling less than 21 calendar days prior to arrival, all payments will be forfeited, unless the entire reservation can be re-rented for the same duration of time.</li>
+                    </ul>
+                </li>
+                <li>Our quoted rates do not include an Oregon Occupany Tax of 10%.</li>
+                <li>We do not allow pets in order to respect the comfort of our guests with allergies.</li>
+                <li>All our suites are non-smoking.</li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <a id="contact"></a>
+            <h2>Contact Us</h2>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-6 columns">
             <form action="#" method="get" accept-charset="utf-8">
                 <label>Name
-                    <input type="text" name="" value="">
+                    <input type="text" name="contact-name" value="">
                 </label>
                 <br/>
                 <label>Email
-                    <input type="text" name="" value="">
+                    <input type="email" name="email" value="">
+                </label>
+                <br/>
+                <label>Phone
+                    <input type="text" name="phone" value="">
                 </label>
                 <br/>Comments/Questions
                 <br/>
@@ -229,10 +382,26 @@
             </form>
 
         </div>
+        <div class="small-12 large-6 columns">
+            <center>
+            <h3>Thank you for your visit to our site!</h3>
+            <p>Please let us know if you have any questions or concerns. We look forward to hosting your next vacation in Ashland!</p></center>
+        </div>
+    </div>
+    <div class="row full-width footer">
+        <a id="footer"></a>
+        <div class="row">
+            <div class="small-12 medium-5 medium-offset-1 columns">2nd Street Cottages, Act 2
+                <br/>144 North Second Street</br>Ashland, OR 97520
+                <br/>541-488-0888 or 877-541-4880 (toll-free)
+            </div>
+            <div class="small-6 medium-6 large-6 columns"></div>
+        </div>
+    </div>
+
     </div>
 
 
-    </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
