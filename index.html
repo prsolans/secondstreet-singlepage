@@ -10,9 +10,14 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <style type="text/css">
     body,
-    .panel, .button {
+    .panel,
+    .button {
         background-color: #E5DAAD;
         font-family: "Alegreya", serif;
+    }
+    a {
+        color: #007840;
+        font-weight: bold;
     }
     h1,
     h2,
@@ -33,12 +38,23 @@
     h3 {
         margin-top: 10px;
     }
-    p, ul, li {
-        font-size: 1.2rem;
-	line-height: 1.8rem;
+    p,
+    ul,
+    li {
+        font-size: 1.0rem;
+        line-height: 1.6rem;
     }
     .button {
-        background-color: #0B4025;
+        background-color: #007840;
+    }
+    .button:hover {
+        background-color: #00b35f;
+    }
+    .calendar {
+        margin-bottom: 15px;
+    }
+    .calendar-header {
+        text-align: center;
     }
     .footer {
         background-color: #007840;
@@ -54,30 +70,35 @@
     }
     .panel {
         border: none;
-        /*border-left: 9px solid #59453E;*/
+        margin-bottom: 0;
     }
     .panel img {
-        border:1px solid #007840;
+        border: 1px solid #007840;
         float: right;
         padding: 9px;
-margin: 9px;
+        margin: 9px;
         width: 40%;
     }
     .example-orbit img {
         max-height: 477px;
         text-align: center;
     }
-
-.orbit-bullets-container {
-	display: none;
-}
+    .orbit-bullets-container {
+        display: none;
+    }
+    img.policies {
+        padding: 15px;
+    }
+    .right {
+        float: right;
+    }
     .suite {
         margin-bottom: 15px;
         clear: both;
     }
     .top-bar {
         background-color: #007840;
-        height: 70px;
+        height: 120px;
         padding: 9px;
         padding-top: 10px;
         -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
@@ -87,7 +108,15 @@ margin: 9px;
     .top-bar .name h1 {
         font-size: 1.7rem;
     }
+    .top-bar .name p {
+        padding-left: 17px;
+    }
+    .top-bar .name a {
+        color: white;
+    }
     .top-bar-section li:not(.has-form) a:not(.button) {
+        font-family: "Alegreya", serif;
+        font-size: 1.2em;
         background-color: #007840;
     }
     </style>
@@ -97,8 +126,8 @@ margin: 9px;
     <nav class="top-bar" data-topbar>
         <ul class="title-area">
             <li class="name">
-                <h1><a href="#">Welcome to 2nd Street Cottages</a>
-                </h1>
+                <h1><a href="#">Welcome to Second Street Cottages</h1><p>144 North Second Street 
+Ashland, OR 97520<br/>1-541-488-0888 or 1-877-541-4880 (toll-free)</p></a>
             </li>
             <li class="toggle-topbar menu-icon"><a href="#">Menu</a>
             </li>
@@ -130,7 +159,8 @@ margin: 9px;
 
     <div class="row">
         <div class="large-12 columns">
-<br/><img src="http://secondstreetcottages.com/images/header_banner4.gif"/>
+            <br/>
+            <img src="images/header_banner.gif" />
 
         </div>
     </div>
@@ -139,7 +169,7 @@ margin: 9px;
     <div class="row">
         <div class="large-12 columns">
             <div class="panel">
-<img src="http://imagesus.homeaway.com/mda01/4807012f-2f5e-41a1-b52e-5e11cf3f9501.1.10" />
+                <img src="http://imagesus.homeaway.com/mda01/4807012f-2f5e-41a1-b52e-5e11cf3f9501.1.10" />
                 <p>Second Street Cottages, Act 2 is an historic home with two private Suites: Heritage Suite and Garden Suite. It is located just two blocks from the center of Ashland, including the Shakespeare Festival Theaters, unique shops, and restaurants. Both suites feature a living room, dining area, fully-equipped kitchen, multiple bedrooms and bathrooms, decks and patio areas.</p>
                 <p>The
                     <strong>Heritage Suite</strong>&nbsp;can accommodate up to eight (8) guests, and contains four bedrooms and three full bathrooms.</p>
@@ -174,15 +204,87 @@ margin: 9px;
             <ul class="example-orbit" data-orbit>
 
                 <li>
-                    <img src="https://lh6.googleusercontent.com/-DVHTqxlie-Q/TqWsv1btNdI/AAAAAAAABtA/W4y3WYrJ_Ro/s800/3_IMG_0122.jpg" alt="slide 2" />
+                    <img src="http://imagesus.homeaway.com/mda01/41796968-84ed-476c-ac57-52133adc650f.1.10" alt="slide 2" />
                     <div class="orbit-caption">
-                        Caption Two.
+                        Front view: landscaped front yard with oversized porch.
                     </div>
                 </li>
                 <li>
-                    <img src="https://lh4.googleusercontent.com/-5CRfahuR5bY/TqWsx3VPWKI/AAAAAAAABtI/99ACU2_NDnk/s800/3_IMG_0124.jpg" alt="slide 3" />
+                    <img src="http://imagesus.homeaway.com/mda01/97ad35fb-7396-4505-9192-a6ffd66ea3f3.1.10" alt="slide 2" />
                     <div class="orbit-caption">
-                        Caption Three.
+                        Front porch has casual seating and dining table/chairs
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/63e1692b-367e-42a8-ba36-bcc104bc7441.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Front porch dining area
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/d3942f62-d607-4fe2-8c60-35b26e28daeb.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Street view: quiet, residential area
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/5092af35-1ae5-40d6-b893-fc16cb1c413f.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Front sitting room: bright and comfortable
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/f8c04932-e5b6-491d-9513-e8edba566b1d.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        TV sitting area
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/08966321-276a-42a9-82d5-52f5895c814b.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        TV/DVD players in living room and free Wi-Fi
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/27128876-46e8-4d02-a5fe-969c9c4b37e8.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Full kitchen: includes dishwasher, coffee maker and microwave
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/bbc78fa7-7b5b-4921-8f92-ac1bb8207648.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Cooking area with ample counter space
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/441c033b-6583-4c37-bd33-d2ee07e0d86d.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Inviting dining area, great for meals with friends
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/fe33a35b-941c-4e1b-9cdf-ee0b64372c55.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Queen bed, fine linens and vintage bow window
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/f07bc405-5759-42e6-af0f-318648b6c3ed.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Bedroom with matching twin beds
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/cf96d60f-b879-46d9-93f8-0cf653de9658.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Patio areas for relaxing or reading
+                    </div>
+                </li>
+                <li>
+                    <img src="http://imagesus.homeaway.com/mda01/4807012f-2f5e-41a1-b52e-5e11cf3f9501.1.10" alt="slide 2" />
+                    <div class="orbit-caption">
+                        Landscaped front yard
                     </div>
                 </li>
             </ul>
@@ -203,7 +305,7 @@ margin: 9px;
                 <li>$420/night for up to four guests
                     <ul>
                         <li>Each additional guest, $30/night per person</li>
-<li>Minimum two night stay</li>
+                        <li>Minimum two-night stay</li>
                     </ul>
                 </li>
             </ul>
@@ -212,7 +314,8 @@ margin: 9px;
             <a href="http://www.vrbo.com/402580" target="_blank" class="button large expand">Reserve now on VRBO</a>
         </div>
         <div class="small-12 large-6 columns">
-        <p>Our Heritage Suite is listed on VRBO (vrbo.com); property/listing #402580.</p>    <p>Our <a target="_blank" href="http://www.vrbo.com/402580">VRBO Heritage Suite listing</a> contains more detailed information, photographs, full calendar, an Ashland area map, and online payment options.</p>
+            <p>Our Heritage Suite is listed on VRBO (vrbo.com); property/listing #402580.</p>
+            <p>Our VRBO <a target="_blank" href="http://www.vrbo.com/402580">Heritage Suite listing</a> contains everything you need to make your reservation: check availability, see photos, review amenities, book reservations and make online payments.</p>
         </div>
     </div>
 
@@ -245,12 +348,6 @@ margin: 9px;
                     </div>
                 </li>
                 <li>
-                    <img src="http://imagesus.homeaway.com/mda01/6840589a-e6b1-473b-b213-34e80315907e.1.10" alt="slide 2" />
-                    <div class="orbit-caption">
-                        Garden Suite, private entry
-                    </div>
-                </li>
-                <li>
                     <img src="http://imagesus.homeaway.com/mda01/57dd1d16-2cf3-4bfe-8352-859571360a3a.1.10" alt="slide 3" />
                     <div class="orbit-caption">
                         Living room, great for quiet reading
@@ -261,7 +358,6 @@ margin: 9px;
     </div>
     <div class="row">
         <div class="small-12 large-6 columns">
-            <p>Our rates are listed below. We require a minimum stay of two nights.</p>
             <h3>Seasonal Rates
                 <small>May 1 through October 31</small>
             </h3>
@@ -269,14 +365,14 @@ margin: 9px;
                 <li>$290/night for up to four guests
                     <ul>
                         <li>Each additional guest, $30/night per person</li>
+                        <li>Minimum two-night stay</li>
                     </ul>
                 </li>
             </ul><a href="http://www.vrbo.com/610049" target="_blank" class="button large expand">Check Availability</a>
         </div>
         <div class="small-12 large-6 columns">
             <p>Our Garden Suite is listed on VRBO (vrbo.com); property/listing #610049.</p>
-            <p>Click the button below to check for full availability, make inquiries, book reservations, and make secure online payments.</p>
-            <p>Our VRBO Garden Suite listing contains more detailed information, photographs, full calendar, an Ashland area map, and online payment options.</p>
+            <p>Our VRBO <a href="http://www.vrbo.com/610049" target="_blank">Garden Suite listing</a> contains everything you need to make your reservation: check availability, see photos, review amenities, book reservations and make online payments.</p>
         </div>
 
     </div>
@@ -285,7 +381,7 @@ margin: 9px;
         <div class="large-12 columns">
             <a id="calendars"></a>
             <h2>Calendars</h2>
-            <p>Calendars at a glance for each suite are illustrated below. Please note that a full calendar for each suite is available on the relevant VRBO listing. To be directed there, please click the appropriate link beneath the calendars.</p>
+            <p>A full calendar for Heritage Suite and Garden Suite is available on their respective VRBO listings. To be directed there, please click the “View all dates” link at the bottom of the calendars.</p>
         </div>
     </div>
     <div class="row">
@@ -294,8 +390,8 @@ margin: 9px;
             <div class="row">
                 <div class="small-12 medium-6 columns">
                     <panel>
-                        <h3>Heritage Suite</h3>
-                        <div id="_vrbo_cal_widget_402580">
+                        <h3 class="calendar-header">Heritage Suite</h3>
+                        <div id="_vrbo_cal_widget_402580" class="calendar">
                             <div id="_vrbo_cal_link_402580">
                                 <a href="http://www.vrbo.com/402580" target="_blank" rel="nofollow">View all dates</a>
                             </div>
@@ -312,9 +408,9 @@ margin: 9px;
                     </panel>
                 </div>
                 <div class="small-12 medium-6 columns">
-                    <h3>Garden Suite</h3>
+                    <h3 class="calendar-header">Garden Suite</h3>
 
-                    <div id="_vrbo_cal_widget_610049">
+                    <div id="_vrbo_cal_widget_610049" class="calendar">
                         <div id="_vrbo_cal_link_610049">
                             <a href="http://www.vrbo.com/610049" target="_blank" rel="nofollow">View all dates</a>
                         </div>
@@ -344,6 +440,7 @@ margin: 9px;
 
     <div class="row">
         <div class="small-12 medium-12 large-12 columns">
+            <img src="images/img_garden.jpg" class="right policies"/>
 
             <p>The following policies apply equally to both of our suites:</p>
             <ul>
@@ -355,10 +452,10 @@ margin: 9px;
                     </ul>
                 </li>
                 <li>Check-In: Guests may check-in at 3:00 pm or later. Please contact us if you require an earlier check-in due a theater performance. Usually times can be arranged in advance.
-                    
+
                 </li>
                 <li>Check-Out: We require guests to check-out by 11:00 am.
-                    
+
                 </li>
                 <li>Cancellations:
                     <ul>
