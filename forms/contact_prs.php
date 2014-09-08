@@ -25,7 +25,7 @@ $comments = $_POST['comments'];
   $headers.= "charset=iso-8859-1\r\n";
   $headers.= "From: webform@secondstreetcottages.com";
 
-  $subject = "SecondStreetCottages.com Online Contact Form";
+  $subject = "*SecondStreetCottages.com Online Contact Form";
   $body = "The following message was received through SecondStreetCottages.com's contact form:";
   $body.= "<br><br>Visitor information:";
   $body.= "<br><br><b>Name:</b> ".$name."";
@@ -35,16 +35,16 @@ $comments = $_POST['comments'];
   $body.= "<br>".$comments."";
 
 // set recipient for emails
-$email2 = "ken@aqueductdevelopment.com";
-$email3 = "innkeeper@ashlandsblackswaninn.com";
+$email2 = "prsolans@gmail.com";
+//$email3 = "innkeeper@ashlandsblackswaninn.com";
 $email = "kreichert@ameritech.net";
 
-mail($email2,$subject,$body,$headers);
-mail($email3,$subject,$body,$headers);
+//mail($email2,$subject,$body,$headers);
+//mail($email3,$subject,$body,$headers);
 
-$success = mail($email,$subject,$body,$headers);
+$success = mail($email2,$subject,$body,$headers);
 if ($success){
-header("Location: ../../thanks.php");
+header("Location: ../index.html?m=1#contact");
   }
  	
 ?>
