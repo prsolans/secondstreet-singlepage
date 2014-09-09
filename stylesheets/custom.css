@@ -1,0 +1,133 @@
+    body, .panel, .button {
+        background-color: #E5DAAD;
+        font-family: "Alegreya", serif;
+    }
+    a {
+        color: #007840;
+        font-weight: bold;
+    }
+    h1, h2, h3, h4, h5 {
+        font-family: "Alegreya", serif;
+        color: #178b51;
+        font-weight: bold;
+    }
+    h1 {
+        font-size: 3.2rem;
+        margin-top: 20px;
+    }
+    h2 {
+        border-top: 4px solid #59453E;
+    }
+    h3 {
+        margin-top: 10px;
+    }
+    p, ul, li {
+        font-size: 1.0rem;
+        line-height: 1.6rem;
+    }
+    .alert {
+        display: none;
+    }
+    .button {
+        background-color: #007840;
+    }
+    .button:hover {
+        background-color: #00b35f;
+    }
+    .calendar {
+        margin-bottom: 15px;
+    }
+    .calendar-header {
+        text-align: center;
+    }
+    .footer {
+        background-color: #007840;
+        border-top: 4px solid #59453E;
+        color: white;
+        padding: 9px;
+    }
+    .footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: normal;
+        float: right;
+    }
+    @media only screen and (max-width: 40em) {
+        .footer .right-half {
+            padding-top: 15px;
+        }
+        .footer a {
+            float: left;
+        }
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    .full-width {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: initial;
+    }
+    .panel {
+        border: none;
+        margin-bottom: 0;
+    }
+    .panel img {
+        border: 1px solid #007840;
+        float: right;
+        padding: 9px;
+        margin: 9px;
+        width: 40%;
+    }
+    .example-orbit img {
+        max-height: 477px;
+        text-align: center;
+    }
+    .orbit-bullets-container {
+        display: none;
+    }
+    img.policies {
+        padding: 15px;
+    }
+    .right {
+        float: right;
+    }
+    .suite {
+        margin-bottom: 15px;
+        clear: both;
+    }
+    .top-bar {
+        background-color: #007840;
+        height: 120px;
+        padding: 9px;
+        padding-top: 10px;
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
+        box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
+    }
+    .top-bar .name h1 {
+        font-size: 1.7rem;
+    }
+    .top-bar .name h3 {
+        font-weight: normal;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .top-bar .name p {
+        padding-left: 17px;
+    }
+    .top-bar .name a {
+        color: white;
+    }
+    .top-bar-section li:not(.has-form) a:not(.button) {
+        font-family: "Alegreya", serif;
+        font-size: 1.2em;
+        background-color: #007840;
+    }
+    .top-bar-section li:not(.has-form) a:not(.button):hover {
+        background-color: #00b35f;
+    }
+    .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+        background-color: #00b35f;
+    }

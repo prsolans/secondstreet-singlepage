@@ -7,163 +7,29 @@
     <title>Second Street Cottages - Ashland, OR</title>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/custom.css" />
     <link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <style type="text/css">
-    body,
-    .panel,
-    .button {
-        background-color: #E5DAAD;
-        font-family: "Alegreya", serif;
-    }
-    a {
-        color: #007840;
-        font-weight: bold;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: "Alegreya", serif;
-        color: #178b51;
-        font-weight: bold;
-    }
-    h1 {
-        font-size: 3.2rem;
-        margin-top: 20px;
-    }
-    h2 {
-        border-top: 4px solid #59453E;
-    }
-    h3 {
-        margin-top: 10px;
-    }
-    p,
-    ul,
-    li {
-        font-size: 1.0rem;
-        line-height: 1.6rem;
-    }
-.alert{display: none;}    .button {
-        background-color: #007840;
-    }
-    .button:hover {
-        background-color: #00b35f;
-    }
-    .calendar {
-        margin-bottom: 15px;
-    }
-    .calendar-header {
-        text-align: center;
-    }
-    .footer {
-        background-color: #007840;
-        border-top: 4px solid #59453E;
-        color: white;
-        padding: 9px;
-    }
-    .footer a {
-        color: white;
-        text-decoration: none;
-        font-weight: normal;
-        float: right;
-    }
-    @media only screen and (max-width: 40em) {
-        .footer .right-half {
-            padding-top: 15px;
-        }
-        .footer a {
-            float: left;
-        }
-    }
-    .footer a:hover {
-        text-decoration: underline;
-    }
-    .full-width {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: initial;
-    }
-    .panel {
-        border: none;
-        margin-bottom: 0;
-    }
-    .panel img {
-        border: 1px solid #007840;
-        float: right;
-        padding: 9px;
-        margin: 9px;
-        width: 40%;
-    }
-    .example-orbit img {
-        max-height: 477px;
-        text-align: center;
-    }
-    .orbit-bullets-container {
-        display: none;
-    }
-    img.policies {
-        padding: 15px;
-    }
-    .right {
-        float: right;
-    }
-    .suite {
-        margin-bottom: 15px;
-        clear: both;
-    }
-    .top-bar {
-        background-color: #007840;
-        height: 120px;
-        padding: 9px;
-        padding-top: 10px;
-        -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
-        -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
-        box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
-    }
-    .top-bar .name h1 {
-        font-size: 1.7rem;
-    }
-    .top-bar .name p {
-        padding-left: 17px;
-    }
-    .top-bar .name a {
-        color: white;
-    }
-    .top-bar-section li:not(.has-form) a:not(.button) {
-        font-family: "Alegreya", serif;
-        font-size: 1.2em;
-        background-color: #007840;
-    }
-    .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #00b35f;
-    }
-    .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
-        background-color: #00b35f;
-    }
-    </style>
-    <script type="text/javascript">
-// Read a page's GET URL variables and return them as an associative array.
-function getUrlVars()
-{
-    var vars = [], hash;
-    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-    for(var i = 0; i < hashes.length; i++)
-    {
-        hash = hashes[i].split('=');
-        vars.push(hash[0]);
-        vars[hash[0]] = hash[1];
-    }
-    return vars;
-}
-    $(document).ready(function() {
-	if(getUrlVars()=="m"){
-	$('.success').css('display', 'block').html('Thank you for submitting your message.');
-}    
 
-});
+    <script type="text/javascript">
+    // Read a page's GET URL variables and return them as an associative array.
+    function getUrlVars() {
+        var vars = [],
+            hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+    $(document).ready(function() {
+        if (getUrlVars() == "m") {
+            $('.success').css('display', 'block').html('Thank you for contacting Second Street Cottages. We will respond to your message as soon as possible.');
+        }
+
+    });
     </script>
 </head>
 
@@ -171,7 +37,9 @@ function getUrlVars()
     <nav class="top-bar" data-topbar>
         <ul class="title-area">
             <li class="name">
-                <h1><a href="#">Welcome to Second Street Cottages</h1><p>144 North Second Street 
+                <h3 class="show-for-small"><a href="#">Second Street Cottages</a>
+                </h3>
+                <h1 class="hide-for-small"><a href="#">Welcome to Second Street Cottages</h1><p class="hide-for-small">144 North Second Street 
 Ashland, OR 97520<br/>1-541-488-0888 or 1-877-541-4880 (toll-free)</p></a>
             </li>
             <li class="toggle-topbar menu-icon"><a href="#">Menu</a>
@@ -380,15 +248,8 @@ Ashland, OR 97520<br/>1-541-488-0888 or 1-877-541-4880 (toll-free)</p></a>
     </div>
 
     <div class="row suite" id="garden-suite">
-        <div class="small-12 large-6 columns ">
-            <p>The Garden Suite is located in the back portion of the original Second Street Cottage house built in the early 1900's. It has been updated and completely renovated with top quality furnishings, clean space, and a fresh living environment. The Garden Suite offers a quiet experience, stylish appointments, and living comfort. It has two bedrooms, each with it's own full bathroom, and accomodates up to five guests.
-            </p>
-            <p>In addition, the Garden Suite has a living room, a fully equipped kitchen, TV (with DVD player), a private washer/dryer, central air, off-street parking, and an outdoor patio.</p>
 
-            <p>Our Garden Suite is listed on VRBO (vrbo.com); property/listing #610049.</p>
-            <p>Our VRBO <a href="http://www.vrbo.com/610049" target="_blank">Garden Suite listing</a> contains everything you need to make your reservation: check availability, see photos, review amenities, book reservations and make online payments.</p>
-        </div>
-        <div class="small-12 large-6 columns">
+        <div class="small-12 large-6 large-push-6 columns">
             <ul class="example-orbit" data-orbit>
                 <li>
                     <img src="http://imagesus.homeaway.com/mda01/7fe745cd-6ceb-467a-acb1-e60f4d994db6.1.10" alt="slide 1" />
@@ -479,6 +340,14 @@ Ashland, OR 97520<br/>1-541-488-0888 or 1-877-541-4880 (toll-free)</p></a>
                 </ul>
             </strong>
             <a href="http://www.vrbo.com/610049" target="_blank" class="button large expand">Reserve now on VRBO</a>
+        </div>
+        <div class="small-12 large-6 large-pull-6 columns ">
+            <p>The Garden Suite is located in the back portion of the original Second Street Cottage house built in the early 1900's. It has been updated and completely renovated with top quality furnishings, clean space, and a fresh living environment. The Garden Suite offers a quiet experience, stylish appointments, and living comfort. It has two bedrooms, each with it's own full bathroom, and accomodates up to five guests.
+            </p>
+            <p>In addition, the Garden Suite has a living room, a fully equipped kitchen, TV (with DVD player), a private washer/dryer, central air, off-street parking, and an outdoor patio.</p>
+
+            <p>Our Garden Suite is listed on VRBO (vrbo.com); property/listing #610049.</p>
+            <p>Our VRBO <a href="http://www.vrbo.com/610049" target="_blank">Garden Suite listing</a> contains everything you need to make your reservation: check availability, see photos, review amenities, book reservations and make online payments.</p>
         </div>
     </div>
 
@@ -625,7 +494,8 @@ Ashland, OR 97520<br/>1-541-488-0888 or 1-877-541-4880 (toll-free)</p></a>
                 <a href="mailto:2ndstreetcottages@gmail.com">2ndstreetcottages@gmail.com</a>
                 <br/><a href="http://www.vrbo.com/402580" target="_blank">Heritage Suite on VRBO</a>
                 <br/><a href="http://www.vrbo.com/610049" target="_blank">Garden Suite on VRBO</a>
-<br/><a href="http://www.secondstreetcottages.com">Secondstreetcottages.com</a>            </div>
+                <br/><a href="http://www.secondstreetcottages.com">Secondstreetcottages.com</a> 
+            </div>
         </div>
     </div>
 
