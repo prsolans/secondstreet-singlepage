@@ -26,8 +26,8 @@ $email = "kreichert@ameritech.net";
 $email2 = "prsolans@gmail.com";
 $email3 = "2ndstreetcottages@gmail.com";
 
-//mail($email2,$subject,$body,$headers);
-//mail($email3,$subject,$body,$headers);
+mail($email2,$subject,$body,$headers);
+mail($email3,$subject,$body,$headers);
 
 $success = mail($email2,$subject,$body,$headers);
 if ($success){

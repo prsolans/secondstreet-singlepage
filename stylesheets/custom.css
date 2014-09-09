@@ -41,7 +41,7 @@
     .calendar-header {
         text-align: center;
     }
-    [data-abide] .error small.error{
+    [data-abide] .error small.error {
         background-color: #007840;
     }
     .error label, .error label.error {
@@ -113,6 +113,11 @@
         -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
         -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
         box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.35);
+    }
+    @media only screen and (max-width: 40em) {
+        .top-bar {
+            height: 75px;
+        }
     }
     .top-bar .name h1 {
         font-size: 1.7rem;
