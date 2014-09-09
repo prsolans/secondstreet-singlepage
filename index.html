@@ -29,6 +29,24 @@
             $('.success').css('display', 'block').html('Thank you for contacting Second Street Cottages. We will respond to your message as soon as possible.');
         }
 
+        var offset = 220;
+        var duration = 500;
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.back-to-top').fadeIn(duration);
+            } else {
+                jQuery('.back-to-top').fadeOut(duration);
+            }
+        });
+
+        jQuery('.back-to-top').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({
+                scrollTop: 0
+            }, duration);
+            return false;
+        })
+
     });
     </script>
 </head>
@@ -492,6 +510,8 @@ Ashland, OR 97520<br/>1-541-488-0888 or 1-877-541-4880 (toll-free)</p></a>
             </center>
         </div>
     </div>
+    <a href="#" class="back-to-top">Back to Top</a>
+
     <div class="row full-width footer">
         <a id="footer"></a>
         <div class="row">
