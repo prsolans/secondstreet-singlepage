@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Second Street Cottages - Ashland, OR</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -44,7 +45,7 @@
         font-size: 1.0rem;
         line-height: 1.6rem;
     }
-    .button {
+.alert{display: none;}    .button {
         background-color: #007840;
     }
     .button:hover {
@@ -144,11 +145,25 @@
     }
     </style>
     <script type="text/javascript">
+// Read a page's GET URL variables and return them as an associative array.
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
     $(document).ready(function() {
-        var pieces = url.split("?");
+	if(getUrlVars()=="m"){
+	$('.success').css('display', 'block').html('Thank you for submitting your message.');
+}    
 
-        alert(pieces[0]);
-    });
+});
     </script>
 </head>
 
@@ -572,7 +587,7 @@ Ashland, OR 97520<br/>1-541-488-0888 or 1-877-541-4880 (toll-free)</p></a>
     </div>
     <div class="row">
         <div class="small-12 large-6 columns">
-            <div class="alert"></div>
+            <div class="alert alert-box success"></div>
             <form action="forms/contact_prs.php" method="post" accept-charset="utf-8">
                 <label>Name
                     <input type="text" name="contact-name" value="">
@@ -610,7 +625,7 @@ Ashland, OR 97520<br/>1-541-488-0888 or 1-877-541-4880 (toll-free)</p></a>
                 <a href="mailto:2ndstreetcottages@gmail.com">2ndstreetcottages@gmail.com</a>
                 <br/><a href="http://www.vrbo.com/402580" target="_blank">Heritage Suite on VRBO</a>
                 <br/><a href="http://www.vrbo.com/610049" target="_blank">Garden Suite on VRBO</a>
-            </div>
+<br/><a href="http://www.secondstreetcottages.com">Secondstreetcottages.com</a>            </div>
         </div>
     </div>
 
@@ -618,7 +633,6 @@ Ashland, OR 97520<br/>1-541-488-0888 or 1-877-541-4880 (toll-free)</p></a>
 
 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
 </body>
