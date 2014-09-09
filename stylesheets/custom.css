@@ -41,7 +41,7 @@
     .calendar-header {
         text-align: center;
     }
-    .error small.error{
+    [data-abide] .error small.error{
         background-color: #007840;
     }
     .error label, .error label.error {
