@@ -27,11 +27,12 @@
     }
     .alert-box {
         display: none;
+        font-size: 1.1rem;
     }
     .button {
         background-color: #007840;
     }
-    .button:hover {
+    .button:hover, .button:focus {
         background-color: #00b35f;
     }
     .calendar {
@@ -39,6 +40,13 @@
     }
     .calendar-header {
         text-align: center;
+    }
+    .error small.error{
+        background-color: #007840;
+    }
+    .error label, .error label.error {
+        font-weight: bold;
+        color: #007840;
     }
     .footer {
         background-color: #007840;
