@@ -18,7 +18,7 @@ All other files (specfically, VRBO images, VRBO calendars, and all fonts) are be
 
 This site uses [Foundation] (http://foundation.zurb.com) as a SCSS/CSS framework and [Bower] (http://bower.io) to handle dependecies.
 
-## Requirements
+## Dev Requirements for local *nix development
 
   * Ruby 1.9+
   * [Node.js](http://nodejs.org)
