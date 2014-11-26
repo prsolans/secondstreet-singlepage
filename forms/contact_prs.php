@@ -1,4 +1,14 @@
 <?php
+ require_once('recaptchalib.php');
+ $privatekey = "6LdQZ_4SAAAAAEV_6NkcFt_4sOXL50P-25QWYlP4";
+ $resp = recaptcha_check_answer ($privatekey,
+                                 $_SERVER["REMOTE_ADDR"],
+                                 $_POST["recaptcha_challenge_field"],
+                                 $_POST["recaptcha_response_field"]);
+ if (!$resp->is_valid) {
+   // What happens when the CAPTCHA was entered incorrectly
+header("Location: ../index.php?e=1#contact");
+ } else {
 
 $name = $_POST['contact-name']; 
 $visitorEmail = $_POST['email']; 
@@ -31,7 +41,7 @@ mail($email3,$subject,$body,$headers);
 
 $success = mail($email2,$subject,$body,$headers);
 if ($success){
-header("Location: ../index.html?m=1#contact");
+header("Location: ../index.php?m=1#contact");
   }
- 	
+} 	
 ?>
